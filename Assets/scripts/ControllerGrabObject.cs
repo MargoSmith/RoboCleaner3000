@@ -89,9 +89,25 @@ public class ControllerGrabObject : MonoBehaviour
             if (collidingObject)
             {
                 GrabObject();
+                print(objectInHand.name);
                 if (objectInHand.tag == "component")
                 {
                     objectInHand.GetComponent<attachment>().onPickup();
+                }
+                if (objectInHand.tag == "startButton")
+                {
+                    objectInHand.GetComponent<Button>().openDoor();
+                    
+                }
+                if (objectInHand.tag == "quitButton")
+                {
+                    objectInHand.GetComponent<Button>().endGame();
+
+                }
+                if (objectInHand.tag == "activateRobotBtn")
+                {
+                    GameObject.Find("manager").GetComponent<manager>().checkCompletion();
+
                 }
             }
         }
@@ -108,6 +124,8 @@ public class ControllerGrabObject : MonoBehaviour
                 ReleaseObject();
             }
         }
+
+
     }
 
     private void GrabObject()

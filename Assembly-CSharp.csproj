@@ -76,7 +76,6 @@
     <Compile Include="Assets\ResonanceAudio\Demos\Scripts\ResonanceAudioDemo\ResonanceAudioDemoCubeController.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\ResonanceAudioMaterialMapper.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\ResonanceAudioMaterialMap.cs" />
-    <Compile Include="Assets\Audio\AudioManager.cs" />
     <Compile Include="Assets\myScripts\attachment.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\ResonanceAudioSource.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\ResonanceAudio.cs" />
@@ -85,6 +84,11 @@
     <Compile Include="Assets\ResonanceAudio\Scripts\ResonanceAudioRoomManager.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\ResonanceAudioReverbProbe.cs" />
     <Compile Include="Assets\myScripts\robotControls.cs" />
+    <Compile Include="Assets\myScripts\AudioManager.cs" />
+    <Compile Include="Assets\myScripts\ObjectAudio.cs" />
+    <Compile Include="Assets\myScripts\Button.cs" />
+    <Compile Include="Assets\myScripts\DoorController.cs" />
+    <Compile Include="Assets\myScripts\LineRendererSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ResonanceAudio\Plugins\x86_64\audiopluginresonanceaudio.dll" />

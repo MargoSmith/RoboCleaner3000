@@ -25,11 +25,11 @@ public class manager : MonoBehaviour
             print("game Finnished");
             gameEnded = true;
         }
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.X)) //for testing/cheating
         {
             destroyParts();
         }
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R))//for testing/cheating
         {
             checkCompletion();
         }
@@ -51,7 +51,12 @@ public class manager : MonoBehaviour
         }
         if (completeCheck)
         {
+            //player success sound
             destroyParts();
+        }
+        else
+        {
+            //play error sound for incomplete
         }
     }
 
