@@ -74,8 +74,6 @@ public class AudioManager : MonoBehaviour
 			sounds[i].SetSource(_go.AddComponent<AudioSource>());
 		}
 
-        // Start background music
-        PlaySound("background");
 	}
 
 	public void PlaySound(string _name)
@@ -84,7 +82,6 @@ public class AudioManager : MonoBehaviour
 		{
 			if (sounds[i].name == _name)
 			{
-                Debug.Log("Playing Sound");
 				sounds[i].Play();
 				return;
 			}

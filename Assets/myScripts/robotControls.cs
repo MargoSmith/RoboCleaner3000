@@ -1,8 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-using UnityEngine;
 using Valve.VR;
 
 public class robotControls : MonoBehaviour
@@ -36,12 +34,13 @@ public class robotControls : MonoBehaviour
 
     //input detection for robot pickup and let go
     void pickup()
-    {      
+    {
 
         if (grabAction.GetState(handtype))
         {
             myAnim.SetBool("holding", true);
             if (grabAction.GetStateDown(handtype)){
+                //RobotAudio.instance.PlaySound("pickup");
                 grabNearbyObj();
             }
            
@@ -91,11 +90,13 @@ public class robotControls : MonoBehaviour
         }
     }
     //joystick/dpad movement controls
+
     void movement()
     {
 
         if(steering.GetAxis(handtype) != (new Vector2(0, 0)))
         {
+            //RobotAudio.instance.PlaySound("walking");
             myAnim.SetBool("running", true);
            
             Vector3 direction = new Vector3(steering.GetAxis(handtype).x, 0, steering.GetAxis(handtype).y);
@@ -111,6 +112,7 @@ public class robotControls : MonoBehaviour
         else
         {
             myAnim.SetBool("running", false);
+            //RobotAudio.instance.StopSound("walking");
         }
     }
 }

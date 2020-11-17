@@ -9,22 +9,21 @@ public class manager : MonoBehaviour
     public GameObject fullRobot;
 
     public int score = 0;
-    public int scoreLimit = 5;
+    private int scoreLimit = 17;
 
     bool gameEnded = false;
+    public GameObject win_canvas;
+    public GameObject action_indicator;
+
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    /*
     void Update()
     {
-        if(score >= scoreLimit && !gameEnded)
-        {
-            print("game Finnished");
-            gameEnded = true;
-        }
         if (Input.GetKeyDown(KeyCode.X)) //for testing/cheating
         {
             destroyParts();
@@ -33,10 +32,14 @@ public class manager : MonoBehaviour
         {
             checkCompletion();
         }
+    
 
     }
-    //check robot is fully assembled before activating
-    public void checkCompletion()
+    */
+
+
+//check robot is fully assembled before activating
+public void checkCompletion()
     {
         bool completeCheck = true;
         foreach (GameObject component in robotComponents)
@@ -52,11 +55,15 @@ public class manager : MonoBehaviour
         if (completeCheck)
         {
             //player success sound
+            AudioManager.instance.PlaySound("success");
+            action_indicator.SetActive(false);
             destroyParts();
         }
         else
         {
             //play error sound for incomplete
+            AudioManager.instance.PlaySound("error");
+
         }
     }
 
@@ -68,14 +75,17 @@ public class manager : MonoBehaviour
         }
         fullRobot.SetActive(true);
     }
-    //restart the game
-    public void restartScene()
-    {
 
-    }
 
     public void increaseScore()
     {
         score++;
+
+        if (score >= scoreLimit && !gameEnded)
+        {
+            print("game Finnished");
+            gameEnded = true;
+            win_canvas.SetActive(true);
+        }
     }
 }

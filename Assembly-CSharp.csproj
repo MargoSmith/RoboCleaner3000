@@ -60,43 +60,42 @@
     <UnityVersion>2020.1.13f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\_Barking_Dog\Common Scripts\Turn_Move.cs" />
-    <Compile Include="Assets\scripts\LaserPointer.cs" />
-    <Compile Include="Assets\scripts\ControllerGrabObject.cs" />
+    <Compile Include="Assets\myScripts\LineRendererSettings.cs" />
+    <Compile Include="Assets\myScripts\LaserPointer.cs" />
+    <Compile Include="Assets\myScripts\ControllerGrabObject.cs" />
+    <Compile Include="Assets\myScripts\RobotAudio.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\ResonanceAudioListener.cs" />
     <Compile Include="Assets\myScripts\manager.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\ResonanceAudioAcousticMesh.cs" />
     <Compile Include="Assets\myScripts\binBox.cs" />
     <Compile Include="Assets\ResonanceAudio\Demos\Scripts\DemoPlayerController.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\ResonanceAudioMaterialMapperUpdater.cs" />
-    <Compile Include="Assets\Stagit\SkyboxEarthPlanets\script\skyboxspace_mouselook_v1.cs" />
-    <Compile Include="Assets\Stagit\SkyboxEarthPlanets\script\skyboxspace_demo_v1.cs" />
+    <Compile Include="Assets\Materials\SkyboxEarthPlanets\script\skyboxspace_mouselook_v1.cs" />
+    <Compile Include="Assets\Materials\SkyboxEarthPlanets\script\skyboxspace_demo_v1.cs" />
     <Compile Include="Assets\ResonanceAudio\Demos\Scripts\ResonanceAudioDemo\ResonanceAudioDemoManager.cs" />
-    <Compile Include="Assets\scripts\ActionsTest.cs" />
+    <Compile Include="Assets\myScripts\ActionsTest.cs" />
     <Compile Include="Assets\ResonanceAudio\Demos\Scripts\ResonanceAudioDemo\ResonanceAudioDemoCubeController.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\ResonanceAudioMaterialMapper.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\ResonanceAudioMaterialMap.cs" />
+    <Compile Include="Assets\myScripts\AudioManager.cs" />
     <Compile Include="Assets\myScripts\attachment.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\ResonanceAudioSource.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\ResonanceAudio.cs" />
+    <Compile Include="Assets\myScripts\Button.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\ResonanceAudioRoom.cs" />
-    <Compile Include="Assets\_Barking_Dog\Common Scripts\MouseLook.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\ResonanceAudioRoomManager.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\ResonanceAudioReverbProbe.cs" />
     <Compile Include="Assets\myScripts\robotControls.cs" />
-    <Compile Include="Assets\myScripts\AudioManager.cs" />
-    <Compile Include="Assets\myScripts\ObjectAudio.cs" />
-    <Compile Include="Assets\myScripts\Button.cs" />
     <Compile Include="Assets\myScripts\DoorController.cs" />
-    <Compile Include="Assets\myScripts\LineRendererSettings.cs" />
+    <Compile Include="Assets\myScripts\ObjectAudio.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ResonanceAudio\Plugins\x86_64\audiopluginresonanceaudio.dll" />
-    <None Include="Assets\Stagit\SkyboxEarthPlanets\readme.txt" />
+    <None Include="Assets\Materials\SkyboxEarthPlanets\readme.txt" />
     <None Include="Assets\ResonanceAudio\Plugins\x86\audiopluginresonanceaudio.dll" />
     <None Include="Assets\ResonanceAudio\Demos\Environment\ResonanceAudioDemo\CubeRoomUnlitGrayscale.shader" />
     <None Include="Assets\ResonanceAudio\Shaders\ResonanceAudioSurfaceMaterial.shader" />
-    <None Include="Assets\_Barking_Dog\Readme_Please.txt" />
+    <None Include="Assets\MyModels\_Barking_Dog\Readme_Please.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
