@@ -9,6 +9,28 @@ Daniel Bowden and Shannon Smith.
 
 CONTROLS
 ------------------------------------------------------------------------------------------------
+Trigger
+click: Grab Object
+
+Trackpad
+click 
+North: teleport player
+
+Dpad
+Position: Steering Robot
+
+ASSETS
+------------------------------------------------------------------------------------------------
+All models and audio were sourced from the Unity Asset store and Zapsplat.
+
+
+BUILD
+------------------------------------------------------------------------------------------------
+The RoboCleaner3000.exe file does not run.
+
+
+SteamVR
+------------------------------------------------------------------------------------------------
 UNITY STEAM VR input setup
 
 Northmove
@@ -22,7 +44,7 @@ Trigger
 click: Grab
 
 Trackpad
-click 
+click
 North: northMove
 South: northMove
 East: northMove
@@ -30,13 +52,3 @@ West: northMove
 
 Dpad
 Position: Steering
-
-
-ASSETS
-------------------------------------------------------------------------------------------------
-All models and audio were sourced from the Unity Asset store and Zapsplat.
-
-
-BUILD
-------------------------------------------------------------------------------------------------
-The RoboCleaner3000.exe file does not run.
