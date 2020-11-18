@@ -12,24 +12,24 @@ CONTROLS
 UNITY STEAM VR input setup
 
 Northmove
-Grab         boolean
-northMove     boolean
-steering    Vector2
+Grab: boolean
+northMove: boolean
+steering: Vector2
 
 UNITY STEAM VR controls set up
 
 Trigger
-click    Grab
+click: Grab
 
 Trackpad
 click 
-North     northMove
-South     northMove
-East     northMove
-West     northMove
+North: northMove
+South: northMove
+East: northMove
+West: northMove
 
 Dpad
-Position    Steering
+Position: Steering
 
 
 ASSETS
